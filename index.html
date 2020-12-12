@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes</title>
+</head>
+
+<body>
+    <div class="section">
+        <h3>PHP</h3>
+        <p><b></b></p>
+            <ul>
+                <li><pre>php -m  установленые модули</pre></li>
+            </ul>
+        <h3>Apache</h3>
+        <p><b></b></p>
+            <ul><h4>Запуск сайта</h4>
+                <p>Зайти в папку /etc/sites-available</p>
+                <p>создать и отредактировать файл /site-name/.conf</p>
+                <code>	ServerAdmin webmaster@localhost </code><br>
+                <code>  ServerName site </code><br>
+                <code>  ServerAlias www.site </code><br>
+                <code>  DocumentRoot /var/www/site </code><br>
+                <p>a2ensite /site-name/.conf</p>
+                <p>service apache2 restart</p>
+                <p>отредактировать файл /etc/hosts</p>
+            </ul>
+        <h3>Функции</h3>
+        <label for="str_functions">string functions</label><br>
+        <select name="str_functions"  onclick="javascript:handleSelect(this)">
+            <option value="http://code.mu/ru/php/manual/string/strtolower">strtolower</option>
+            <option value="http://code.mu/ru/php/manual/string/strtoupper/">strtoupper</option>
+            <option value="http://code.mu/ru/php/manual/string/ucfirst/">ucfirst</option>
+            <option value="http://code.mu/ru/php/manual/string/lcfirst">lcfirst</option>
+            <option value="http://code.mu/ru/php/manual/string/ucwords">ucwords</option>
+            <option value="http://code.mu/ru/php/manual/string/strlen">strlen</option>
+            <option value="http://code.mu/ru/php/manual/string/substr">substr</option>
+            <option value="http://code.mu/ru/php/manual/string/str_replace">str_replace</option>
+            <option value="http://code.mu/ru/php/manual/string/strtr">strtr</option>
+            <option value="http://code.mu/ru/php/manual/string/substr_replace">substr_replace</option>
+            <option value="http://code.mu/ru/php/manual/string/strpos">strpos</option>
+            <option value="http://code.mu/ru/php/manual/string/strrpos">strrpos</option>
+            <option value="http://code.mu/ru/php/manual/string/strstr">strstr</option>
+            <option value="http://code.mu/ru/php/manual/string/explode">explode</option>
+            <option value="http://code.mu/ru/php/manual/array/implode/">implode</option>
+            <option value="http://code.mu/ru/php/manual/string/str_split">str_split</option>
+            <option value="http://code.mu/ru/php/manual/string/trim">trim</option>
+            <option value="http://code.mu/ru/php/manual/string/ltrim">ltrim</option>
+            <option value="http://code.mu/ru/php/manual/string/rtrim">rtrim</option>
+            <option value="http://code.mu/ru/php/manual/string/strrev">strrev</option>
+            <option value="http://code.mu/ru/php/manual/string/str_shuffle">str_shuffle</option>
+            <option value="http://code.mu/ru/php/manual/string/number_format">number_format</option>
+            <option value="http://code.mu/ru/php/manual/string/str_repeat">str_repeat</option>
+            <option value="http://code.mu/ru/php/manual/string/htmlspecialchars">htmlspecialchars</option>
+            <option value="http://code.mu/ru/php/manual/string/strip_tags">strip_tags</option>
+            <option value="http://code.mu/ru/php/manual/string/chr">chr</option>
+            <option value="http://code.mu/ru/php/manual/string/ord">ord</option>
+            <option value="http://code.mu/ru/php/manual/string/str_word_count">str_word_count</option>
+            <option value="http://code.mu/ru/php/manual/string/substr_count">substr_count</option>
+            <option value="http://code.mu/ru/php/manual/string/count_chars">count_chars</option>
+            <option value="http://code.mu/ru/php/manual/string/strchr">strchr</option>
+            <option value="http://code.mu/ru/php/manual/string/strrchr">strrch</option>
+        </select><br>
+        <label for="math_functions">math functions</label></br>
+        <select name="math_functions" onclick="javascript:handleSelect(this)">
+            <option value="http://code.mu/ru/php/manual/math/abs">abs</option>
+            <option value="http://code.mu/ru/php/manual/math/pow">pow</option>
+            <option value="http://code.mu/ru/php/manual/math/sqrt">sqrt</option>
+            <option value="http://code.mu/ru/php/manual/math/round">round</option>
+            <option value="http://code.mu/ru/php/manual/math/ceil">ceil</option>
+            <option value="http://code.mu/ru/php/manual/math/floor">floor</option>
+            <option value="http://code.mu/ru/php/manual/math/min">min</option>
+            <option value="http://code.mu/ru/php/manual/math/max">max</option>
+            <option value="http://code.mu/ru/php/manual/math/mt_rand">mt_rand</option>
+        </select></br>
+        <label for="array_functions">array functions</label></br>
+        <select name="array_functions" onclick="javascript:handleSelect(this)">
+            <option value="http://code.mu/ru/php/manual/array/count">count</option>
+            <option value="http://code.mu/ru/php/manual/array/in_array">in_array</option>
+            <option value="http://code.mu/ru/php/manual/array/array_sum">array_sum</option>
+            <option value="http://code.mu/ru/php/manual/array/array_product">array_product</option>
+            <option value="http://code.mu/ru/php/manual/array/range">range</option>
+            <option value="http://code.mu/ru/php/manual/array/array_merge">array_merge</option>
+            <option value="http://code.mu/ru/php/manual/array/array_slice">array_slice</option>
+            <option value="http://code.mu/ru/php/manual/array/array_splice">array_splice</option>
+            <option value="http://code.mu/ru/php/manual/array/array_keys">array_keys</option>
+            <option value="http://code.mu/ru/php/manual/array/array_values">array_values</option>
+            <option value="http://code.mu/ru/php/manual/array/array_combine">array_combine</option>
+            <option value="http://code.mu/ru/php/manual/array/array_flip">array_flip</option>
+            <option value="http://code.mu/ru/php/manual/array/array_reverse">array_reverse</option>
+            <option value="http://code.mu/ru/php/manual/array/array_search">array_search</option>
+            <option value="http://code.mu/ru/php/manual/array/array_replace">array_replace</option>
+            <option value="http://code.mu/ru/php/manual/array/array_count_values">array_count_values</option>
+            <option value="http://code.mu/ru/php/manual/array/array_rand">array_rand</option>
+            <option value="http://code.mu/ru/php/manual/array/shuffle">shuffle</option>
+            <option value="http://code.mu/ru/php/manual/array/array_unique">array_unique</option>
+            <option value="http://code.mu/ru/php/manual/array/array_shift">array_shift</option>
+            <option value="http://code.mu/ru/php/manual/array/array_pop">array_pop</option>
+            <option value="http://code.mu/ru/php/manual/array/array_unshift">array_unshift</option>
+            <option value="http://code.mu/ru/php/manual/array/array_push">array_push</option>
+            <option value="http://code.mu/ru/php/manual/array/array_pad">array_pad</option>
+            <option value="http://code.mu/ru/php/manual/array/array_fill">array_fill</option>
+            <option value="http://code.mu/ru/php/manual/array/array_fill_keys">array_fill_keys</option>
+            <option value="http://code.mu/ru/php/manual/arrayarray_chunk">array_chunk</option>
+            <option value="http://code.mu/ru/php/manual/array/array_map">array_map</option>
+            <option value="http://code.mu/ru/php/manual/array/array_intersect">array_intersect</option>
+            <option value="http://code.mu/ru/php/manual/array/array_diff">array_diff</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">sort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">rsort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">asort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">ksort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">usort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">uasort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">uksort</option>
+            <option value="http://code.mu/ru/php/manual/array/sort">natsort</option>
+        </select>
+        <br>
+        <label for="date_functions">date functions</label></br>
+        <select name="date_functions" onclick="javascript:handleSelectWithoutSlash(this)">
+            <option value="https://www.php.net/manual/ru/function.time.php">time</option>
+            <option value="https://www.php.net/manual/ru/function.mktime.php">mktime</option>
+            <option value="https://www.php.net/manual/ru/function.date.php">date</option>
+            <option value="https://www.php.net/manual/ru/function.strtotime.php">strtotime</option>
+            <option value="http://code.mu/ru/php/manual/time/date_create/">date_create</option>
+            <option value="http://code.mu/ru/php/manual/time/date_modify/">date_modify</option>
+            <option value="http://code.mu/ru/php/manual/time/date_format/">date_format</option>
+        </select>
+        <h3>Дата</h3>
+        <p><a href="https://www.php.net/manual/ru/datetime.format.php#doctable">Все форматы</a></p>
+        <ul>
+            <li><pre>U – количество секунд, прошедших с 1 января 1970 года (то есть timestamp).</pre></li>
+            <li><pre>z – номер дня от начала года.</pre></li>
+            <li><pre>Y – год, 4 цифры.</pre></li>
+            <li><pre>y - год, две цифры.</pre></li>
+            <li><pre>m – номер месяца (с нулем спереди).</pre></li>
+            <li><pre>n – номер месяца без нуля впереди.</pre></li>
+            <li><pre>d – номер дня в месяце, всегда две цифры (то есть первая может быть нулем).</pre></li>
+            <li><pre>j – номер дня в месяце без предваряющего нуля.</pre></li>
+            <li><pre>w – день недели (0 - воскресенье, 1 - понедельник и т.д.).</pre></li>
+            <li><pre>h – часы в 12-часовом формате.</pre></li>
+            <li><pre>H – часы в 24-часовом формате.</pre></li>
+            <li><pre>i – минуты.</pre></li>
+            <li><pre>s – секунды.</pre></li>
+            <li><pre>L – 1, если високосный год, 0, если не високосный.</pre></li>
+            <li><pre>W – порядковый номер недели года.</pre></li>
+            <li><pre>t – количество дней в указанном месяце.</pre></li>
+        </ul>
+        </p>
+        <h3>Глобальные массивы</h3>
+        <ul>
+            <li>$_GET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; данные, отправленные методом GET</li>
+            <li>$_POST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; данные, отправленные методом POST</li>
+            <li>$_REQUEST &nbsp;&nbsp;&nbsp; данные, отправленные и тем, и другим методом одновременно</li>
+        </ul>
+        </p>
+        <h3>Regex</h3>
+        <p><b>Шаблоны необходимо заключать в разделители</b>
+        <ul>
+            <li># #</li>
+            <li>/ /</li>
+            <li>~ ~</li>
+            <li>( )</li>
+            <li>&lt; &g;</li>
+            <li>и другие</li>
+        </ul>
+        </p>
+        <p>
+            <p><b>Метасимволы вне квадратных скобок:</b></p>
+            <ul>
+                <li><pre>\   общий экранирующий символ, допускающий несколько вариантов применения</pre></li>
+                <li><pre>^  декларирует начало данных (или строки в многострочном режиме)</pre></li>
+                <li><pre>$  декларирует конец данных или до завершения строки (или окончание строки в многострочном режиме)</pre></li>
+                <li><pre>.  соответствует любому символу, кроме перевода строки (по умолчанию)</pre></li>
+                <li><pre>[  начало описания символьного класса (операция или), символы . + * экранировать не нужно</pre></li>
+                <li><pre>]  конец описания символьного класса (операция или), экранируем \ - ^</pre></li>
+                <li><pre>|  начало ветки условного выбора</pre></li>
+                <li><pre>(  начало подмаски</pre></li>
+                <li><pre>)  конец подмаски</pre></li>
+                <li><pre>?  расширяет смысл метасимвола (, является также квантификатором, означающим 0 или 1 вхождение, также преобразует жадные квантификаторы в ленивые (смотрите повторение))</pre></li>
+                <li><pre>*  квантификатор, означающий 0 или более вхождений</pre></li>
+                <li><pre>+  квантификатор, означающий 1 или более вхождений</pre></li>
+                <li><pre>{  начало количественного квантификатора</pre></li>
+                <li><pre>}  конец количественного квантификатора</pre></li>
+            </ul>
+            <p><b>Метасимволы внутри квадратных скобок</b></p>
+            <ul>
+                <li><pre>\  общий экранирующий символ</pre></li>
+                <li><pre>^  означает отрицание класса, допустим только в начале класса</pre></li>
+                <li><pre>-  означает символьный интервал</pre></li>
+            </ul>
+            <p><b>Модификаторы (устанавливаются после экранирующих символов)</b></p>
+            <ul>
+                <li><pre>i  игнорирует регистр</pre></li>
+                <li><pre>X  Вызывает ошибку при экранировании обычных символов</pre></li>
+            </ul>
+            <p><b>Группы символов (большая буква означает отрицание)</b></p>
+            <ul>
+                <li><pre>\s      Обозначает пробел или пробельный символ (имеется ввиду перевод строки, табуляция и т.п.)р</pre></li>
+                <li><pre>\S	Не пробел, то есть всё, кроме \s.</pre></li>
+                <li><pre>\w	Цифра или буква (внимание: сюда не входит кириллица! Это можно исправить с помощью функции setlocale при большом желании.)</pre></li>
+                <li><pre>\W	Не цифра и не буква.</pre></li>
+                <li><pre>\d	Цифра от 0 до 9.</pre></li>
+                <li><pre>\D	Не цифра от 0 до 9.</pre></li>
+                <li><pre>\b	начало или конец слова</pre></li>
+                <li><pre>\B	не начало и не конец слова</pre></li>
+            </ul>
+        </p>
+    </div>
+</body>
+<script type="text/javascript">
+    function handleSelect(elm)
+    {
+       window.location = elm.value+"/";
+    }
+    function handleSelectWithoutSlash(elm)
+    {
+       window.location = elm.value;
+    }
+  </script>
+
+</html>
